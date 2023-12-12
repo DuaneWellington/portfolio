@@ -1,3 +1,6 @@
+// PATH: 'src/components/Header.jsx'
+
+import React from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -14,18 +17,28 @@ function Header() {
   };
 
   return (
-    <header>
-      <h1>My Portfolio Page</h1>
+    <header className="header">
+      <h1 className="hi">HELLO!</h1>
+        <h4 className="myName">my name is</h4>
+      <h1 className="nameDuane">Duane Wellington</h1>
+      <h4 className="and">& I'm a</h4>
+      <h1 className="job">Full Stack Developer</h1>
       <nav style={navStyle}>
         <Link to="/">
           <div>HOME</div>
         </Link>
         <Link to="/about">
           <div>ABOUT</div>
+          </Link>
+          <Link to="/skills">
+          <div>SKILLS</div>
         </Link>
         <Link to="/projects">
           <div>PROJECTS</div>
         </Link>
+        <Link to="/contact">
+          <div>CONTACT</div>
+          </Link>
       </nav>
     </header>
   );

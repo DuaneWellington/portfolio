@@ -1,27 +1,34 @@
+// PATH: 'src/App.jsx'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 // IMPORT COMPONENTS
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Route, Routes } from "react-router-dom";
 
 // IMPORT PAGES
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About.jsx";
+import Skills from "./pages/Skills/Skills.jsx";
+import Projects from "./pages/Projects/Projects";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
-
   return (
-    <div className="App">
-      <Header />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
