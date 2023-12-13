@@ -1,7 +1,7 @@
 // PATH: 'src/pages/Projects/Projects.jsx'
 
 import React, { useState, useEffect } from "react";
-import useScrollToTop from "../../useScrollToTop";
+import useScrollToTop from "../../utils/hooks/useScrollToTop";
 import { FaGithub, FaServer } from "react-icons/fa";
 import { Link } from "react-router-dom";
 

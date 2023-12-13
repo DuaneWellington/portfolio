@@ -1,7 +1,7 @@
 // PATH: 'src/pages/Skills/Skills.jsx'
 
 import React from "react";
-import useScrollToTop from "../../useScrollToTop";
+import useScrollToTop from "../../utils/hooks/useScrollToTop";
 
 function Skills() {
     useScrollToTop();

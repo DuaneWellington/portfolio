@@ -3,9 +3,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import useScrollToTop from "../../utils/hooks/useScrollToTop";
 
 function Header() {
 
+  useScrollToTop();
+  
   const navStyle = {
     display: "flex",
     justifyContent: "space-around",

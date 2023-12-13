@@ -2,8 +2,10 @@
 
 import React from "react";
 import Header from "../../components/Header/Header";
+import useScrollToTop from "../../utils/hooks/useScrollToTop";
 
 function Home() {
+  useScrollToTop();
     const introductionStyle = {
       // Office name sticker styling here
     };

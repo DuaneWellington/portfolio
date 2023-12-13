@@ -1,7 +1,7 @@
 // PATH: 'src/pages/About/About.jsx'
 
 import { useState, useEffect } from "react";
-import useScrollToTop from "../../useScrollToTop";
+import useScrollToTop from "../../utils/hooks/useScrollToTop";
 
 function About() {
   useScrollToTop

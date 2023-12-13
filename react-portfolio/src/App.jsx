@@ -2,7 +2,8 @@
 
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./styles/global.css";
+import "./App.css";
+import useScrollToTop from "./utils/hooks/useScrollToTop";
 
 // IMPORT COMPONENTS
 import Header from "./components/Header/Header";
@@ -16,16 +17,17 @@ import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 
 function App() {
+  useScrollToTop();
   return (
     <Router>
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/skills" component={Skills} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/" exact element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Switch>
         <Footer />
       </div>
