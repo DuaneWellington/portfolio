@@ -11,7 +11,7 @@ function useScrollToTop() {
             });
         };
 
-        const navLinks = document.querySelector("nav a");
+        const navLinks = document.querySelectorAll("nav a");
         navLinks.forEach((link) => {
             link.addEventListener("click", handleScrollToTop);
         });
@@ -21,7 +21,7 @@ function useScrollToTop() {
                 link.removeEventListener("click", handleScrollToTop);
             });
         };
-    }, {});
+    }, []);
 }
 
 export default useScrollToTop

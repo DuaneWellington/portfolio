@@ -1,4 +1,4 @@
-// PATH: 'src/components/Footer.jsx'
+// PATH: 'src/components/Footer/Footer.jsx'
 
 import React, { useState, useEffect } from "react";
 
@@ -30,14 +30,15 @@ function Footer() {
     }, []);
 
     return (
+        <footer>        
         <div className="footer">
-           
         {isVisible && (
             <h4 onClick={scrollToTop} className="scroll-to-top">
                 ↑ Back to top ↑
             </h4>
         )}
         </div>
+        </footer>
     );
 }
 

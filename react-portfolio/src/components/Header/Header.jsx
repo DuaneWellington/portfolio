@@ -1,11 +1,10 @@
-// PATH: 'src/components/Header.jsx'
+// PATH: 'src/components/Header/Header.jsx'
 
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Header.css";
 
 function Header() {
-
-  //an example of an inline style for the nav tag for an initial layout - later additions, or 
 
   const navStyle = {
     display: "flex",
@@ -24,21 +23,10 @@ function Header() {
       <h4 className="and">& I'm a</h4>
       <h1 className="job">Full Stack Developer</h1>
       <nav style={navStyle}>
-        <Link to="/">
-          <div>HOME</div>
-        </Link>
-        <Link to="/about">
-          <div>ABOUT</div>
-          </Link>
-          <Link to="/skills">
-          <div>SKILLS</div>
-        </Link>
-        <Link to="/projects">
-          <div>PROJECTS</div>
-        </Link>
-        <Link to="/contact">
-          <div>CONTACT</div>
-          </Link>
+        <Link to="/">HOME</Link>
+        <Link to="/about">ABOUT</Link>
+          <Link to="/skills">SKILLS</Link>
+        <Link to="/projects">PROJECTS</Link>
       </nav>
     </header>
   );
